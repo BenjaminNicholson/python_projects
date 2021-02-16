@@ -57,3 +57,14 @@ print(replace_data(temps))
 def sum_of_list(array):
     new_data = sum([float(num) for num in array])
     return new_data
+
+
+def sort_list(*args):
+    sorted_lists = sorted(args).upper()
+    return sorted_lists
+
+with open('bear.txt', 'r') as file:
+    contense = file.read()
+    print(contense[:90])
+            
+    
