@@ -26,45 +26,39 @@
 # print(" ".join(phrases))
 
 # temps = [221, 234, 340, 230]
-
 # new_temps = [temp / 10 for temp in temps]
-
 # print(new_temps)
 
 # temps = [221, 234, 340, -9999, 230]
-
 # new_temps = [temp / 10 for temp in temps if temp != -9999]
-
 # print(new_temps)
 
 # array = []
-
 # def only_nums(array):
 #    new_array = [num for num in array if num != str(num) and num > 0]
 #    return new_array
 
 # temps = [221, 234, 340, -9999, 230]
-
 # new_temps = [temp / 10 if temp != -9999 else 0 for temp in temps]
 
-temps = [99, 'no data', 95, 94, 'no data']
-def replace_data(array):
-    new_data = [0 if i == 'no data' else i for i in array]
-    return new_data
+# temps = [99, 'no data', 95, 94, 'no data']
+# def replace_data(array):
+#    new_data = [0 if i == 'no data' else i for i in array]
+#    return new_data
 
-print(replace_data(temps))
+# print(replace_data(temps))
 
-def sum_of_list(array):
-    new_data = sum([float(num) for num in array])
-    return new_data
+# def sum_of_list(array):
+#    new_data = sum([float(num) for num in array])
+#    return new_data
 
 
-def sort_list(*args):
-    sorted_lists = sorted(args).upper()
-    return sorted_lists
+# def sort_list(*args):
+#    sorted_lists = sorted(args).upper()
+#    return sorted_lists
 
-with open('bear.txt', 'r') as file:
-    contense = file.read()
-    print(contense[:90])
+# with open('bear.txt', 'r') as file:
+#    contense = file.read()
+#    print(contense[:90])
             
     
