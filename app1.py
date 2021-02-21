@@ -6,6 +6,10 @@ data = json.load(open("data.json"))
 def find_definition(w):
     if w in data:
         return data[w]
+    elif w.title() in data:
+        return data[w.title()] # if word is recorded in title case this will check 
+    elif w.upper() in data:
+        return data[w.upper()] # if word is recorded in capitals as an acronym this will check
     elif len(get_close_matches(w, data.keys())) > 0:
         new_word = input(f"did you mean {get_close_matches(w, data.keys())[0]} instead? Enter Y if yes, or N if no: ").upper()
         if new_word == "Y":
